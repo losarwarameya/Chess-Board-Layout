@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.board{
+    border: 2px solid black;
+}
+.row{
+    display: flex;
+}
+.square{
+    height: 70px;
+    /* width: calc(100% / 9); */
+    width: 70px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.black{
+    background-color: rgb(88, 83, 83);
+    color: white;
+}
+.white{
+    background-color: rgb(224, 217, 217);
+    color: black;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: rgb(104, 189, 65);
+}
+.row-no, .col-no, .origin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.row-no{
+    height: 70px;
+    width: 30px;
+}
+.col-no{
+    width: 70px;
+    height: 30px;
+}
+.origin{
+    height: 30px;
+    width: 30px;
+}
+.sidebar{
+    text-align: center;
+    width: 400px;
+}
+.question{
+    font-size: 80px;
+    margin: 10px auto;
+}
+.difficulty{
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.score{
+    font-size: 40px;
+}
